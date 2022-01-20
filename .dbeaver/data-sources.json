@@ -1,0 +1,30 @@
+{
+	"folders": {},
+	"connections": {
+		"sqlite_jdbc-17e73ff2af9-6d9a795dbbb0cf91": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "InvenMania.db",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"database": "/Users/arif/PycharmProjects/TestArea/FantasyGame/InvenMania.db",
+				"url": "jdbc:sqlite:/Users/arif/PycharmProjects/TestArea/FantasyGame/InvenMania.db",
+				"type": "dev",
+				"auth-model": "native",
+				"handlers": {}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}
