@@ -7,8 +7,9 @@ Steep - Warrior
 '''
 
 import sqlite3 as sl
+from contextlib import closing
 
-conn = sl.connect('InvenMania.db')
+conn = sl.connect('../InvenMania.db')
 
 with conn:
     conn.execute("""
@@ -34,3 +35,7 @@ with conn:
     data = conn.execute('SELECT * FROM Characters')
     for row in data:
         print(data)
+
+with closing(sl.connect('InvenMania.db')) as connection:
+    with closing(connection.cursor()) as cursor:
+        rows = cursor.execute("SELECT 1").fetchall()
