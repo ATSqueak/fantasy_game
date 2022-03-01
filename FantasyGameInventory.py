@@ -1,5 +1,6 @@
 '''
 Inventory of current items in game
+Not used in Version 1
 '''
 import pprint
 

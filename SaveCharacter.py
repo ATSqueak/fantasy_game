@@ -19,12 +19,14 @@ def SavePlayerCharacter(user, character):
     #username = whatever enetered  need to capture this in a global variable?
     #charatername = whatever is chosen in Intro/Login
     #userID = map back to UserAccount table
-
+    data = []
+'''
     data = [
         (1, 'Ray', 'Rayyan', 'Taha', 'seep'),
         (2, 'ADT', 'Advait', 'Abhyankar', 'reep'),
         (3, 'Coupon', 'Crisps', 'Saline', 'veep')
     ]
+'''
     with conn:
         conn.executemany(sql, data)
 

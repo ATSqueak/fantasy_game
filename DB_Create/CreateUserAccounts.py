@@ -30,10 +30,12 @@ data = [
 with conn:
     conn.executemany(sql,data)
 
+'''
 with conn:
     data = conn.execute('SELECT * FROM UserAccount')
     for row in data:
         print(data)
+'''
 
 with closing(sl.connect('InvenMania.db')) as connection:
     with closing(connection.cursor()) as cursor:

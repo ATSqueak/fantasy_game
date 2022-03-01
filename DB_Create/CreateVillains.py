@@ -14,20 +14,27 @@ conn = sl.connect('../InvenMania.db')
 
 with conn:
     conn.execute("""
+        drop table Villains;
+        """)
+
+with conn:
+    conn.execute("""
         CREATE TABLE IF NOT EXISTS Villains (
         id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
         villainname TEXT,
         species TEXT,
+        health INTEGER,
+        magic INTEGER,
         UNIQUE(id,villainname,species)
         );
     """)
 
-sql = 'INSERT OR IGNORE INTO Villains (id,villainname,species) VALUES (?,?,?)'
+sql = 'INSERT OR IGNORE INTO Villains (id,villainname,species,health,magic) VALUES (?,?,?,?,?)'
 data = [
-    (1,'Sneak','Thief'),
-    (2,'Lesser','Fighter'),
-    (3,'Clossal','Dragon'),
-    (4,'Drobee','Magician')
+    (1,'Sneak','Thief',20,10),
+    (2,'Lesser','Fighter',20,10),
+    (3,'Clossal','Dragon',20,50),
+    (4,'Drobee','Magician',20,50)
 ]
 with conn:
     conn.executemany(sql,data)
