@@ -14,13 +14,15 @@ Sneak - Thief
 Lesser - Fighter
 Clossal - Dragon
 
-Classes for each character type
-Classes for each character action
-Classes for each character skill
+Split into modules.
+An SQLITE DB will hold the Character and Villain details
+There is also a login and rudamentary registration.
+Global variables will hold the current character and villain details
+There is a rpelensih module after each battle.
 
-Class for health
-Class for dice roll
-
-Class for opponents skill
-Claas for opponent health
+TODO:
+Add inventory details and use.
+Make the screen more readable.. use Web?
+Add health and magic replenish points in game.
+Expand on game.
 
