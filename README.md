@@ -26,7 +26,7 @@ There is a rpelensih module after each battle.
 
 ## TODO List
 1. Add inventory details and use.
-2. Make the screen more readable.. use Web?
+2. Make the screen more readable.. maybe use a web interface?
 3. Add health and magic replenish points in game.
 4. Expand on game.
 
